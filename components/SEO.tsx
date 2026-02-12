@@ -10,7 +10,7 @@ interface SEOProps {
     type?: 'website' | 'article' | 'service';
 }
 
-const SITE_URL = 'https://manovratha.in';
+const SITE_URL = 'https://www.manovratha.in';
 
 const SEO: React.FC<SEOProps> = ({
     title,
@@ -20,9 +20,9 @@ const SEO: React.FC<SEOProps> = ({
     keywords = "mental health, therapy, counseling, psychology, wellness, India, mental healthcare, psychologist, psychiatrist, counselor, Manovratha",
     type = "website"
 }) => {
-    const siteTitle = "Manovratha | Healing Minds";
+    const siteTitle = "Manovratha |  Mental Health Platform for Professionals";
     const fullTitle = title === "Home" ? siteTitle : `${title} | Manovratha`;
-    const currentUrl = url || (typeof window !== 'undefined' ? window.location.href : SITE_URL);
+    const currentUrl = url || (typeof window !== 'undefined'  ? `${SITE_URL}${window.location.pathname}`  : SITE_URL);
     const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
 
     // Organization JSON-LD structured data
@@ -33,7 +33,7 @@ const SEO: React.FC<SEOProps> = ({
         "alternateName": "Manovratha",
         "url": SITE_URL,
         "logo": `${SITE_URL}/logo.svg`,
-        "description": "A holistic global mental health sanctuary for professionals, institutions, and every mind that matters.",
+        "description":"Manovratha is India's mental health platform for professionals, institutions & individuals. Evidence-based care, peer community, and AI-powered tools.",
         "foundingDate": "2023",
         "slogan": "Healing Minds",
         "sameAs": [

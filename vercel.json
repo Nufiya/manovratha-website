@@ -1,5 +1,18 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist/static",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "manovratha.in"
+        }
+      ],
+      "destination": "https://www.manovratha.in/:path*",
+      "permanent": true
+    }
+  ]
 }
