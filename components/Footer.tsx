@@ -39,6 +39,14 @@ const Footer: React.FC = () => {
                                     bg: 'hover:bg-blue-600',
                                     link: 'mailto:wellbeing@manovratha.in',
                                     path: <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                                },
+                                 {
+                                l: 'YouTube',
+                                bg: 'hover:bg-red-600',
+                                link: 'https://youtube.com/@manovratha',
+                                path: (
+                                    <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C16 5 12 5 12 5h-.1s-4 0-6.9.1c-.4.1-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 9.6 2 11.3v1.4C2 14.4 2.1 16 2.1 16s.2 1.4.8 2c.8.8 1.9.8 2.4.9 1.8.1 6.7.1 6.7.1s4 0 6.9-.1c.4-.1 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.1-1.6.1-3.3v-1.4C22 9.6 21.8 8 21.8 8zM10 14.7V9.3l5.2 2.7L10 14.7z"/>
+                                )
                                 }
                             ].map((s, i) => (
                                 <a key={i} href={s.link} target="_blank" rel="noreferrer"

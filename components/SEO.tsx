@@ -20,7 +20,7 @@ const SEO: React.FC<SEOProps> = ({
     keywords = "mental health, therapy, counseling, psychology, wellness, India, mental healthcare, psychologist, psychiatrist, counselor, Manovratha",
     type = "website"
 }) => {
-    const siteTitle = "Manovratha |  Mental Health Platform for Professionals";
+    const siteTitle = "Manovratha | Mental Health Platform for Professionals";
     const fullTitle = title === "Home" ? siteTitle : `${title} | Manovratha`;
     const currentUrl = url || (typeof window !== 'undefined'  ? `${SITE_URL}${window.location.pathname}`  : SITE_URL);
     const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
@@ -39,7 +39,9 @@ const SEO: React.FC<SEOProps> = ({
         "sameAs": [
             "https://www.linkedin.com/company/manovratha/",
             "https://www.instagram.com/manovratha/",
-            "https://x.com/manovratha"
+            "https://x.com/manovratha",
+            "https://youtube.com/@manovratha"
+
         ],
         "contactPoint": {
             "@type": "ContactPoint",

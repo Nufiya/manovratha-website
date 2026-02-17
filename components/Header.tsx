@@ -193,7 +193,7 @@ const Header: React.FC = () => {
           >
             {/* Background Decorations */}
             <div className="absolute -top-40 -left-40 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+            <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-brand-secondary/10 rounded-full blur-3xl animate-pulse delay-1000"  />
 
             <div className="flex flex-col gap-4 sm:gap-6 w-full max-w-md px-6 sm:px-10 relative z-10">
               {navItems.map((item, i) => (
